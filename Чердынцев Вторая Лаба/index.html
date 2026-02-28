@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Три режима</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="toolbar">
+            <button class="mode-btn" data-mode="morph">Морфинг</button>
+            <button class="mode-btn" data-mode="path">Траектория</button>
+            <button class="mode-btn" data-mode="mask">Маска</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="mainCanvas" width="1000" height="700"></canvas>
+        </div>
+
+        <div class="mask-hint" id="maskHint">🖱️ двигайте мышкой — маска покажет скрытое</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
