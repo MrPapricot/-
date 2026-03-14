@@ -252,10 +252,10 @@ function drawMask(now, mx, my) {
 
     if (mx === null || my === null) return;
 
-    const radius = 130;
+    const radius = 200;
     const gradient = ctx.createRadialGradient(mx, my, 0, mx, my, radius);
     gradient.addColorStop(0, 'rgba(0,0,0,0)');
-    gradient.addColorStop(0.5, 'rgba(26,26,46,0.8)');
+    gradient.addColorStop(0.9, 'rgba(26,26,46,0.8)');
     gradient.addColorStop(1, '#1a1a2e');
 
     ctx.fillStyle = gradient;
